@@ -1,5 +1,24 @@
 
+@keyframes example {
+  from {
+   background-color: #11304c;
 
+      }
+  to {
+      opacity: 1;
+      background-image: url("../images/header-bg.jpg");
+    background-color: #0d1929;
+     background-blend-mode: overlay;    
+   
+}
+}
+
+.animate_navbar{
+  animation-name: example;
+  animation-duration: .8s;
+animation-fill-mode: forwards;
+ 
+}
   /* ––––––––––––––––––––––––––––––––––––––––––––––––––
     Based on: https://codepen.io/nickelse/pen/YGPJQG
     Influenced by: https://sproutsocial.com/
@@ -16,7 +35,13 @@
     width: 100%;
   }
 
-
+  .mega-menu-1{
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+  }
 
   /* #hoverable Class Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -24,6 +49,9 @@
     position: static;
   }
 
+   .hoverable-1 {
+    position: static;
+  }
   .hoverable > a:after {
     content: "\25BC";
     font-size: 10px;
@@ -31,43 +59,27 @@
     position: relative;
     top: -1px;
   }
-
-  .hoverable:hover .mega-menu {
-    display: block;
-  }
-
-
-  /* #toggle Class Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-  .toggleable > label:after {
+ .hoverable-1 > a:after {
     content: "\25BC";
     font-size: 10px;
     padding-left: 6px;
     position: relative;
     top: -1px;
   }
-
-  .toggle-input {
-    display: none;
-  }
-  .toggle-input:not(checked) ~ .mega-menu {
-    display: none;
-  }
-
-  .toggle-input:checked ~ .mega-menu {
+  .hoverable:hover .mega-menu {
     display: block;
+    transition-delay: 0s
+    
+  }
+  .hoverable-1:hover .mega-menu-1 {
+    display: block;
+    transition-delay: 0s
   }
 
-  .toggle-input:checked + label {
-    color: white;
-    background: #2c5282; /*@apply bg-blue-800 */
-  }
 
-  .toggle-input:checked ~ label:after {
-    content: "\25B2";
-    font-size: 10px;
-    padding-left: 6px;
-    position: relative;
-    top: -1px;
-  }
+
+
+ 
+
+
+  

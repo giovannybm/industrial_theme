@@ -17,7 +17,7 @@ module.exports = {
         "blue-industrial-2": "#11304c",
       },   
     height: theme => ({
-        "screen-p-70": "calc(100vh + 70px)",
+        "screen-p-12": "calc(100vh + 3rem)",
         "screen/3": "calc(100vh / 3)",
         "screen/4": "calc(100vh / 4)",
         "screen/5": "calc(100vh / 5)",

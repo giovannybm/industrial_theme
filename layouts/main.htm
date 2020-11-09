@@ -35,5 +35,17 @@
     {% scripts %}
 <!-- styles -->
   {% styles %}
+  <script>
+    window.addEventListener("scroll",(e)=>{
+      const d = window.scrollY
+      var element = document.getElementById("mainNavBar");
+      
+      if (d>5){
+        element.classList.add("animate_navbar", "shadow-lg");
+      }else{
+        element.classList.remove("animate_navbar", "shadow-lg");
+      }
+    })
+  </script>
   </body>
 </html>
