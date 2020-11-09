@@ -1,0 +1,21 @@
+
+.1-shape-divider-bottom {
+    position: absolute;
+    bottom:-70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+}
+.1-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: calc(100vh*(2/3))
+   
+}
+
+.-1shape-divider-bottom .shape-fill {
+    fill: #FFFFFF;
+}

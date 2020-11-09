@@ -7,11 +7,15 @@ module.exports = {
 
     ],
   theme: {
+     fontFamily:{
+          'sans': [ 'Assistant','poppins', 'sans-serif'],
+    },
+
     extend: {
         colors: {
         "blue-industrial-1": "#0d1929",
         "blue-industrial-2": "#11304c",
-      },
+      },   
     height: theme => ({
         "screen-p-70": "calc(100vh + 70px)",
         "screen/3": "calc(100vh / 3)",
